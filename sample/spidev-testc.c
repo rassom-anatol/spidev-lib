@@ -16,7 +16,7 @@ void main( void)
   spi_config.delay=0;
   spi_config.bits_per_word=8;
 
-  spifd=spi_open("/dev/spidev2.0",spi_config);
+  spifd=spi_open("/dev/spidev0.0",spi_config);
 
   memset(tx_buffer,0,32);
   memset(rx_buffer,0,32);
